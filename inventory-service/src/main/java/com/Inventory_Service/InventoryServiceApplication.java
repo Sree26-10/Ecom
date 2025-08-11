@@ -24,9 +24,9 @@ public class InventoryServiceApplication {
 			Inventory inventory1=new Inventory();
 			inventory1.setSkuCode("iphone_13_red");
 			inventory1.setQuantity(0);
-
+			/* A new change has been made to his where only one obj is created*/
 			inventoryRepository.save(inventory);
-			inventoryRepository.save(inventory1);
+
 		};
 	}
 }
