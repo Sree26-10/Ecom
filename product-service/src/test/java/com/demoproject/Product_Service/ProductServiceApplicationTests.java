@@ -63,7 +63,11 @@ class ProductServiceApplicationTests {
 				 .andExpect(status().isOk());
 
 	}
-
+	@Test
+	void saveAllProducts()throws Exception{
+		mockMvc.perform(MockMvcRequestBuilders.post("/api/save-product"))
+				.andExpect(status().isCreated());
+	}
 
 
 	private ProductRequest getProductRequest() {
