@@ -26,6 +26,7 @@ public class InventoryServiceApplication {
 			inventory1.setQuantity(0);
 			/* A new change has been made to his where only one obj is created*/
 			inventoryRepository.save(inventory);
+			inventoryRepository.save(inventory1);
 			/*test cases are implemented successfully*/
 
 		};
